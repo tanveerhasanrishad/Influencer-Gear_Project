@@ -37,9 +37,14 @@
 }
 
 /* Shared styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 header {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -55,6 +60,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
+  margin-top: 87px;
 }
 
 .nav-logo {
@@ -75,4 +81,137 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 34px;
+}
+
+/* hero section related styles */
+.hero-section {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.hero-content {
+  max-width: 582px;
+}
+
+.hero-title {
+  font-size: 3.2rem;
+  line-height: 70px;
+  letter-spacing: 0px;
+  color: #3a3a3a;
+  margin-bottom: 16px;
+}
+
+.hero-description {
+  font-size: 1rem;
+  color: #3a3a3a;
+  margin-bottom: 16px;
+}
+
+.hero-btn {
+  padding: 10px 24px;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: #e02c6d;
+  border-radius: 41px;
+  border: none;
+}
+.hero-image {
+  background-image: url(../images/Circle\ design.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 0;
+}
+.hero-image img {
+  width: 100%;
+}
+
+/* icon-container section related styles */
+
+.icon-container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 36px 62px;
+  border-top: 2px solid rgba(211, 211, 211, 0.266);
+  border-bottom: 2px solid rgba(211, 211, 211, 0.266);
+}
+
+.icons {
+  justify-content: center;
+  align-items: center;
+  gap: 61px;
+}
+
+.icons img {
+  width: 100%;
+}
+
+/* media query related styles  */
+
+/* small device */
+
+@media screen and (max-width: 572px) {
+  /* navbar related styles */
+  nav {
+    flex-direction: column;
+    justify-items: center;
+    margin-top: 10px;
+  }
+  .nav-logo {
+    margin-bottom: 20px;
+  }
+  .nav-link ul {
+    gap: 15px;
+  }
+
+  /* hero section related styles */
+  .hero-section {
+    flex-direction: column-reverse;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .hero-image {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+  .hero-btn {
+    justify-self: center;
+  }
+
+  /* icon-container section related */
+
+  .icon-container {
+    border: none;
+    padding: 0 30px;
+  }
+  .icons {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* medium device */
+@media screen and (min-width: 572px) and (max-width: 992px) {
+  nav {
+    flex-direction: column;
+    justify-items: center;
+    margin-top: 40px;
+  }
+  .nav-logo {
+    margin-bottom: 20px;
+  }
+  .nav-link ul {
+    gap: 40px;
+  }
 }
