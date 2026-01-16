@@ -137,9 +137,12 @@ nav {
   padding: 36px 62px;
   border-top: 2px solid rgba(211, 211, 211, 0.266);
   border-bottom: 2px solid rgba(211, 211, 211, 0.266);
+  margin-bottom: 100px;
 }
 
 .icons {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
   justify-content: center;
   align-items: center;
   gap: 61px;
@@ -147,6 +150,80 @@ nav {
 
 .icons img {
   width: 100%;
+}
+
+/* popular collection related styles */
+
+.popular-collection {
+  max-width: 1047px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.popular-collection .heading {
+  font-size: 1.8rem;
+  line-height: 70px;
+  color: #3a3a3a;
+  margin-bottom: 30px;
+}
+
+.popular-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  padding: 17px 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+
+.card .card-name {
+  font-size: 1.8rem;
+  line-height: 40px;
+  color: #18191f;
+  margin-bottom: 6px;
+}
+
+.card .card-price {
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.card-rating {
+  padding: 5px 13px 5px 0px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-rating .star i {
+  color: gold;
+  stroke: gold;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.card-rating .rating-number {
+  font-size: 0.9rem;
+  color: #5e6366;
+}
+
+.card .card-description {
+  font-size: 0.9rem;
+  color: #787885;
 }
 
 /* media query related styles  */
@@ -172,6 +249,19 @@ nav {
     flex-direction: column-reverse;
     gap: 20px;
     text-align: center;
+    padding: 15px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    line-height: normal;
+    margin-bottom: 15px;
+  }
+  .hero-description {
+    font-size: 0.9rem;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .hero-image {
@@ -193,12 +283,13 @@ nav {
     padding: 0 30px;
   }
   .icons {
-    display: grid;
-    gap: 30px;
     grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
-    align-items: center;
   }
+  .icons img {
+    width: 100%;
+  }
+
+  /* popular collection section related styles */
 }
 
 /* medium device */
