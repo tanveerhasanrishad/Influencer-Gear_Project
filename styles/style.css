@@ -276,6 +276,46 @@ nav {
   border: none;
 }
 
+/* footer related styles */
+footer {
+  background-color: #0a0826;
+  padding: 50px 0px;
+}
+
+.footer-content {
+  max-width: 262px;
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-heading {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+.footer-content p {
+  font-size: 0.8rem;
+  line-height: 24px;
+  color: #d9dbe1;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 17px;
+}
+
+.footer-links i {
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  border-radius: 50%;
+  color: white;
+  background-color: #5e6366;
+}
+
 /* media query related styles  */
 
 /* small device */
@@ -352,6 +392,30 @@ nav {
     margin-bottom: 50px;
     padding-right: 20px;
     padding-left: 20px;
+  }
+
+  /* featured-products section related styles */
+  .featured-products {
+    padding: 0px 15px 0px 15px;
+    margin-bottom: 50px;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .featured-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .featured-image {
+    width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .featured-products button {
+    max-width: 155px;
   }
 }
 
