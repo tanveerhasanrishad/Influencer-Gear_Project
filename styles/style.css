@@ -173,6 +173,7 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 30px;
+  margin-bottom: 50px;
 }
 
 .card {
@@ -224,6 +225,14 @@ nav {
 .card .card-description {
   font-size: 0.9rem;
   color: #787885;
+}
+
+.popular-collection .see-more {
+  gap: 8px;
+  justify-content: right;
+  align-items: center;
+  color: rgba(224, 44, 109, 0.87);
+  font-size: 1rem;
 }
 
 /* media query related styles  */
@@ -290,6 +299,19 @@ nav {
   }
 
   /* popular collection section related styles */
+  .popular-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .popular-cards {
+    margin-bottom: 32px;
+  }
+
+  .popular-collection {
+    margin-bottom: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 /* medium device */
